@@ -1,0 +1,39 @@
+http://cpiindex.io/*      https://www.cpiindex.io/:splat 301!
+https://cpiindex.io/*     https://www.cpiindex.io/:splat 301!
+http://www.cpiindex.io/*  https://www.cpiindex.io/:splat 301!
+
+http://zh.cpiindex.io/*   https://zh.cpiindex.io/:splat 301!
+http://cpiindex.io/*      https://zh.cpiindex.io/:splat 301! Language=zh
+https://cpiindex.io/*     https://zh.cpiindex.io/:splat 301! Language=zh
+http://www.cpiindex.io/*  https://zh.cpiindex.io/:splat 301! Language=zh
+https://www.cpiindex.io/* https://zh.cpiindex.io/:splat 301! Language=zh
+
+http://ar.cpiindex.io/*   https://ar.cpiindex.io/:splat 301!
+http://cpiindex.io/*      https://ar.cpiindex.io/:splat 301! Language=ar
+https://cpiindex.io/*     https://ar.cpiindex.io/:splat 301! Language=ar
+http://www.cpiindex.io/*  https://ar.cpiindex.io/:splat 301! Language=ar
+https://www.cpiindex.io/* https://ar.cpiindex.io/:splat 301! Language=ar
+
+http://ru.cpiindex.io/*   https://ru.cpiindex.io/:splat 301!
+http://cpiindex.io/*      https://ru.cpiindex.io/:splat 301! Language=ru
+https://cpiindex.io/*     https://ru.cpiindex.io/:splat 301! Language=ru
+http://www.cpiindex.io/*  https://ru.cpiindex.io/:splat 301! Language=ru
+https://www.cpiindex.io/* https://ru.cpiindex.io/:splat 301! Language=ru
+
+http://de.cpiindex.io/*   https://de.cpiindex.io/:splat 301!
+http://cpiindex.io/*      https://de.cpiindex.io/:splat 301! Language=de
+https://cpiindex.io/*     https://de.cpiindex.io/:splat 301! Language=de
+http://www.cpiindex.io/*  https://de.cpiindex.io/:splat 301! Language=de
+https://www.cpiindex.io/* https://de.cpiindex.io/:splat 301! Language=de
+
+http://ja.cpiindex.io/*   https://ja.cpiindex.io/:splat 301!
+http://cpiindex.io/*      https://ja.cpiindex.io/:splat 301! Language=ja
+https://cpiindex.io/*     https://ja.cpiindex.io/:splat 301! Language=ja
+http://www.cpiindex.io/*  https://ja.cpiindex.io/:splat 301! Language=ja
+https://www.cpiindex.io/* https://ja.cpiindex.io/:splat 301! Language=ja
+
+http://ko.cpiindex.io/*   https://ko.cpiindex.io/:splat 301!
+http://cpiindex.io/*      https://ko.cpiindex.io/:splat 301! Language=ko
+https://cpiindex.io/*     https://ko.cpiindex.io/:splat 301! Language=ko
+http://www.cpiindex.io/*  https://ko.cpiindex.io/:splat 301! Language=ko
+https://www.cpiindex.io/* https://ko.cpiindex.io/:splat 301! Language=ko
