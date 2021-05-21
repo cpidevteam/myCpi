@@ -117,8 +117,8 @@ const Icon = styled(QuotesIcon)`
 `;
 
 const Showcase = ({ title, content }) => {
-  console.log('rrrrrrr : ', typeof text);
-  console.log('contentcontent : ', typeof content);
+  console.log('rrrrrrr : ', title);
+  console.log('contentcontent : ', content);
   // const items = [
   //   {
   //     title:
@@ -203,8 +203,9 @@ Showcase.propTypes = {
   title: PropTypes.string,
   content: PropTypes.arrayOf(
     PropTypes.shape({
-      videoUrl: PropTypes.string,
       text: PropTypes.string,
+      image: PropTypes.string,
+      videoUrl: PropTypes.string,
     })
   ),
 };

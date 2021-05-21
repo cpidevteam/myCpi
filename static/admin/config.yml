@@ -150,10 +150,26 @@ collections:
               - { label: 'Date', name: 'date', widget: 'string' }
       - file: 'src/sections/Showcase.md'
         label: 'Showcase'
-        name: 'Showcase'
+        name: 'showcase'
         fields:
-          - { label: 'Title', name: 'title', widget: 'string', required: false }
-          - { label: 'Hide', name: 'hide', widget: 'boolean' }
+          - { label: 'Title', name: 'title', widget: 'string' }
+          - { label: 'SubTitle', name: 'subtitle', widget: 'string' }
+          - label: 'About section content'
+            name: 'content'
+            widget: 'list'
+            fields:
+              - label: 'Videos'
+                name: 'videos'
+                widget: 'list'
+                fields:
+                  - { label: 'Embed url', name: 'embed', widget: 'string' }
+                  - { label: 'Label', name: 'label', widget: 'string' }
+              - {
+                  label: 'Image',
+                  name: 'image',
+                  widget: 'image',
+                  required: false,
+                }
 
       - file: 'src/sections/platform.md'
         label: 'Platform'
