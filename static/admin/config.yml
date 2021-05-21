@@ -152,8 +152,7 @@ collections:
         label: 'Showcase'
         name: 'showcase'
         fields:
-          - { label: 'Title', name: 'title', widget: 'string' }
-          - { label: 'SubTitle', name: 'subtitle', widget: 'string' }
+          - { label: 'Title', name: 'title', widget: 'string', required: false }
           - label: 'About section content'
             name: 'content'
             widget: 'list'
@@ -164,12 +163,6 @@ collections:
                 fields:
                   - { label: 'Embed url', name: 'embed', widget: 'string' }
                   - { label: 'Label', name: 'label', widget: 'string' }
-              - {
-                  label: 'Image',
-                  name: 'image',
-                  widget: 'image',
-                  required: false,
-                }
 
       - file: 'src/sections/platform.md'
         label: 'Platform'
