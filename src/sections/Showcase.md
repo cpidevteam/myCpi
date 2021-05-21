@@ -1,4 +1,5 @@
 ---
+<<<<<<< HEAD
 title: About us
 subtitle: What We Offer
 content:
@@ -59,4 +60,8 @@ featcontent:
       include voting on which assets will be included in the CPIX  asset list,
       and steering the CPIX token’s direction.
     videos: []
+=======
+title: Showcase
+hide: true
+>>>>>>> 4d3d95b2ce6e77da2f5db6da354034389aa4c3d8
 ---
