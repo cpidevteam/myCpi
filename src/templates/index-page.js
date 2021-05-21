@@ -8,6 +8,7 @@ import Head from '../components/Head';
 import Layout from '../layouts';
 import SaleInfo from '../sections/sale-info';
 import About from '../sections/about';
+import Showcase from '../sections/Showcase/Showcase';
 import Platform from '../sections/platform';
 import Functionality from '../sections/functionality';
 import Allocation from '../sections/allocation';
@@ -19,6 +20,7 @@ import Feedback from '../sections/feedback';
 import Header from '../sections/header';
 import Footer from '../sections/footer';
 import CookieNotice from '../components/CookieNotice';
+import { console } from 'window-or-global';
 
 class IndexPage extends React.Component {
   constructor(props) {
@@ -116,13 +118,16 @@ class IndexPage extends React.Component {
   }
 
   render() {
+    console.log('ppppppp : ', this.props);
     const {
       data: {
         about: { frontmatter: about },
+        // showcase: { frontmatter: showcase },
         roadmap: { frontmatter: roadmap },
         team: { frontmatter: team },
         advisors: { frontmatter: advisors },
         media: { frontmatter: media },
+        showcase,
         settings,
         partners,
         platform,
@@ -134,7 +139,7 @@ class IndexPage extends React.Component {
       },
     } = this.props;
 
-    console.log(saleInfo,':::::: SALE INFO')
+    console.log(saleInfo, ':::::: SALE INFO');
     const { currentSection } = this.state;
     return (
       <Layout>
@@ -167,12 +172,14 @@ class IndexPage extends React.Component {
           }}
         />
         <div ref={this.handleSectionRef('home')} id="home">
-          <SaleInfo {...saleInfo} feedback={{...feedback}} />
+          <SaleInfo {...saleInfo} feedback={{ ...feedback }} />
+        </div>
+        <div ref={this.handleSectionRef('showcase')} id="showcase">
+          <Showcase {...showcase} />
         </div>
         <div ref={this.handleSectionRef('about')} id="about">
           <About {...about} />
           <Platform {...platform} />
-
         </div>
         <div ref={this.handleSectionRef('token')} id="token">
           <Functionality {...token} />
@@ -202,11 +209,7 @@ class IndexPage extends React.Component {
             <Media {...media} />
           </div>
         )}
-        {!media.hide && (
-          <div ref={this.handleSectionRef('media')} id="media">
-            <Media {...media} />
-          </div>
-        )}
+
         <Footer {...footer} email={settings.frontmatter.email} />
         <CookieNotice text={settings.frontmatter.cookienotice} />
       </Layout>
@@ -283,6 +286,36 @@ export const pageQuery = graphql`
       }
     }
 
+    showcase: markdownRemark(fields: { slug: { eq: "/showcase/" } }) {
+      frontmatter {
+        title
+        content {
+          videos {
+            embed
+            label
+          }
+          text
+        }
+      }
+    }
+    about: markdownRemark(fields: { slug: { eq: "/about/" } }) {
+      frontmatter {
+        title
+        subtitle
+        content {
+          image
+          text
+          videos {
+            embed
+            label
+          }
+        }
+        featcontent {
+          image
+          text
+        }
+      }
+    }
     about: markdownRemark(fields: { slug: { eq: "/about/" } }) {
       frontmatter {
         title

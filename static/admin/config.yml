@@ -8,579 +8,586 @@ media_folder: static/img
 public_folder: /img
 
 collections:
-  - name: "sections"
-    label: "Sections"
+  - name: 'sections'
+    label: 'Sections'
     files:
-      - file: "src/sections/sale-info.md"
-        label: "Header content"
-        name: "sale-info"
+      - file: 'src/sections/sale-info.md'
+        label: 'Header content'
+        name: 'sale-info'
         fields:
-          - { label: "Intro", name: "body", widget: "markdown" }
+          - { label: 'Intro', name: 'body', widget: 'markdown' }
           - {
-              label: "White paper",
-              name: "whitePaper",
-              widget: "file",
+              label: 'White paper',
+              name: 'whitePaper',
+              widget: 'file',
               required: false,
             }
           - {
-              label: "White paper button label",
-              name: "whitePaperLabel",
-              widget: "string",
+              label: 'White paper button label',
+              name: 'whitePaperLabel',
+              widget: 'string',
               required: false,
             }
-          - { label: "Crowdsale url", name: "crowdsale", widget: "string" }
+          - { label: 'Crowdsale url', name: 'crowdsale', widget: 'string' }
           - {
-              label: "Crowdsale button label",
-              name: "crowdsaleLabel",
-              widget: "string",
+              label: 'Crowdsale button label',
+              name: 'crowdsaleLabel',
+              widget: 'string',
             }
           - {
-              label: "Crowdsale contract address",
-              name: "crowdsaleAddr",
-              widget: "string",
+              label: 'Crowdsale contract address',
+              name: 'crowdsaleAddr',
+              widget: 'string',
               required: false,
             }
-          - { label: "ICO Supply", name: "total", widget: "number" }
-          - { label: "Details", name: "details", widget: "string" }
-          - { label: "Details label", name: "detailsLabel", widget: "string" }
+          - { label: 'ICO Supply', name: 'total', widget: 'number' }
+          - { label: 'Details', name: 'details', widget: 'string' }
+          - { label: 'Details label', name: 'detailsLabel', widget: 'string' }
           - {
-              label: "Countdown to",
-              name: "countDownTo",
-              widget: "string",
-              required: false,
-            }
-          - {
-              label: "web3 Provider URL",
-              name: "web3ProviderUrl",
-              widget: "string",
-            }
-          - {
-              label: "Token price (overrides contract price)",
-              name: "price",
-              widget: "string",
-              required: false,
-            }
-          - { label: "Extra tokens sold", name: "extraSold", widget: "number" }
-          - {
-              label: "Show minimum investment",
-              name: "showMinimum",
-              widget: "boolean",
-            }
-          - {
-              label: "Hide countdown",
-              name: "hideCountdown",
-              widget: "boolean",
-            }
-          - {
-              label: "Minimum investment",
-              name: "minimum",
-              widget: "string",
+              label: 'Countdown to',
+              name: 'countDownTo',
+              widget: 'string',
               required: false,
             }
           - {
-              label: "Override ICO title",
-              name: "icoTitle",
-              widget: "string",
+              label: 'web3 Provider URL',
+              name: 'web3ProviderUrl',
+              widget: 'string',
+            }
+          - {
+              label: 'Token price (overrides contract price)',
+              name: 'price',
+              widget: 'string',
+              required: false,
+            }
+          - { label: 'Extra tokens sold', name: 'extraSold', widget: 'number' }
+          - {
+              label: 'Show minimum investment',
+              name: 'showMinimum',
+              widget: 'boolean',
+            }
+          - {
+              label: 'Hide countdown',
+              name: 'hideCountdown',
+              widget: 'boolean',
+            }
+          - {
+              label: 'Minimum investment',
+              name: 'minimum',
+              widget: 'string',
               required: false,
             }
           - {
-              label: "Override stage names",
-              name: "stageNames",
-              widget: "list",
-              default: ["Stage 1", "Stage 2", "Stage 3"],
+              label: 'Override ICO title',
+              name: 'icoTitle',
+              widget: 'string',
+              required: false,
+            }
+          - {
+              label: 'Override stage names',
+              name: 'stageNames',
+              widget: 'list',
+              default: ['Stage 1', 'Stage 2', 'Stage 3'],
             }
 
-      - file: "src/sections/feedback.md"
-        label: "Mailchimp"
-        name: "mailchimp"
+      - file: 'src/sections/feedback.md'
+        label: 'Mailchimp'
+        name: 'mailchimp'
         fields:
-          - { label: "URL", name: "url", widget: "string" }
-          - { label: "Email input", name: "inputemail", widget: "string" }
-          - { label: "User ID", name: "userid", widget: "string" }
-          - { label: "List ID", name: "listid", widget: "string" }
-          - { label: "Success message", name: "successMsg", widget: "string" }
-      - file: "src/sections/about.md"
-        label: "About"
-        name: "about"
+          - { label: 'URL', name: 'url', widget: 'string' }
+          - { label: 'Email input', name: 'inputemail', widget: 'string' }
+          - { label: 'User ID', name: 'userid', widget: 'string' }
+          - { label: 'List ID', name: 'listid', widget: 'string' }
+          - { label: 'Success message', name: 'successMsg', widget: 'string' }
+      - file: 'src/sections/about.md'
+        label: 'About'
+        name: 'about'
         fields:
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "SubTitle", name: "subtitle", widget: "string" }
-          - label: "About section content"
-            name: "content"
-            widget: "list"
+          - { label: 'Title', name: 'title', widget: 'string' }
+          - { label: 'SubTitle', name: 'subtitle', widget: 'string' }
+          - label: 'About section content'
+            name: 'content'
+            widget: 'list'
             fields:
-              - label: "Videos"
-                name: "videos"
-                widget: "list"
+              - label: 'Videos'
+                name: 'videos'
+                widget: 'list'
                 fields:
-                  - { label: "Embed url", name: "embed", widget: "string" }
-                  - { label: "Label", name: "label", widget: "string" }
+                  - { label: 'Embed url', name: 'embed', widget: 'string' }
+                  - { label: 'Label', name: 'label', widget: 'string' }
               - {
-                  label: "Image",
-                  name: "image",
-                  widget: "image",
+                  label: 'Image',
+                  name: 'image',
+                  widget: 'image',
                   required: false,
                 }
-              - { label: "Text", name: "text", widget: "markdown" }
-          - label: "Feature section content"
-            name: "featcontent"
-            widget: "list"
+              - { label: 'Text', name: 'text', widget: 'markdown' }
+          - label: 'Feature section content'
+            name: 'featcontent'
+            widget: 'list'
             fields:
-              - label: "Videos"
-                name: "videos"
-                widget: "list"
+              - label: 'Videos'
+                name: 'videos'
+                widget: 'list'
                 fields:
-                  - { label: "Embed url", name: "embed", widget: "string" }
-                  - { label: "Label", name: "label", widget: "string" }
-              - { label: "Image", name: "image", widget: "image" }
-              - { label: "Text", name: "text", widget: "markdown" }
-      - file: "src/sections/media.md"
-        label: "Media"
-        name: "media"
+                  - { label: 'Embed url', name: 'embed', widget: 'string' }
+                  - { label: 'Label', name: 'label', widget: 'string' }
+              - { label: 'Image', name: 'image', widget: 'image' }
+              - { label: 'Text', name: 'text', widget: 'markdown' }
+      - file: 'src/sections/media.md'
+        label: 'Media'
+        name: 'media'
         fields:
-          - { label: "Title", name: "title", widget: "string", required: false }
-          - { label: "Hide", name: "hide", widget: "boolean" }
-          - label: "Articles"
-            name: "articles"
-            widget: "list"
+          - { label: 'Title', name: 'title', widget: 'string', required: false }
+          - { label: 'Hide', name: 'hide', widget: 'boolean' }
+          - label: 'Articles'
+            name: 'articles'
+            widget: 'list'
             fields:
-              - { label: "Media logo", name: "logo", widget: "image" }
-              - { label: "Article title", name: "title", widget: "string" }
-              - { label: "Article url", name: "url", widget: "string" }
-              - { label: "Date", name: "date", widget: "string" }
-      - file: "src/sections/platform.md"
-        label: "Platform"
-        name: "platform"
+              - { label: 'Media logo', name: 'logo', widget: 'image' }
+              - { label: 'Article title', name: 'title', widget: 'string' }
+              - { label: 'Article url', name: 'url', widget: 'string' }
+              - { label: 'Date', name: 'date', widget: 'string' }
+      - file: 'src/sections/Showcase.md'
+        label: 'Showcase'
+        name: 'Showcase'
         fields:
-          - { label: "Title", name: "title", widget: "string" }
+          - { label: 'Title', name: 'title', widget: 'string', required: false }
+          - { label: 'Hide', name: 'hide', widget: 'boolean' }
+
+      - file: 'src/sections/platform.md'
+        label: 'Platform'
+        name: 'platform'
+        fields:
+          - { label: 'Title', name: 'title', widget: 'string' }
           - {
-              label: "Activate Animation",
-              name: "animation",
-              widget: "boolean",
+              label: 'Activate Animation',
+              name: 'animation',
+              widget: 'boolean',
             }
-          - { label: "Intro", name: "body", widget: "markdown" }
-          - { label: "Show video", name: "video", widget: "boolean" }
+          - { label: 'Intro', name: 'body', widget: 'markdown' }
+          - { label: 'Show video', name: 'video', widget: 'boolean' }
           - {
-              label: "Show price charts",
-              name: "showCharts",
-              widget: "boolean",
+              label: 'Show price charts',
+              name: 'showCharts',
+              widget: 'boolean',
             }
-          - { label: "Image", name: "image", widget: "image", required: false }
+          - { label: 'Image', name: 'image', widget: 'image', required: false }
           - {
-              label: "Video URL",
-              name: "videourl",
-              widget: "string",
+              label: 'Video URL',
+              name: 'videourl',
+              widget: 'string',
               required: false,
             }
-      - file: "src/sections/roadmap.md"
-        label: "Roadmap"
-        name: "roadmap"
+      - file: 'src/sections/roadmap.md'
+        label: 'Roadmap'
+        name: 'roadmap'
         fields:
-          - { label: "Title", name: "title", widget: "string" }
-          - label: "Roadmap steps"
-            name: "steps"
-            widget: "list"
+          - { label: 'Title', name: 'title', widget: 'string' }
+          - label: 'Roadmap steps'
+            name: 'steps'
+            widget: 'list'
             fields:
               - {
-                  label: "Title",
-                  name: "title",
-                  widget: "string",
+                  label: 'Title',
+                  name: 'title',
+                  widget: 'string',
                   required: false,
                 }
               - {
-                  label: "Description",
-                  name: "descr",
-                  widget: "text",
+                  label: 'Description',
+                  name: 'descr',
+                  widget: 'text',
                   required: false,
                 }
               - {
-                  label: "Done",
-                  name: "done",
-                  widget: "boolean",
+                  label: 'Done',
+                  name: 'done',
+                  widget: 'boolean',
                   required: false,
                 }
-      - file: "src/sections/team.md"
-        label: "Team"
-        name: "team"
+      - file: 'src/sections/team.md'
+        label: 'Team'
+        name: 'team'
         fields:
-          - { label: "Title", name: "title", widget: "string" }
-          - label: "Team members"
-            name: "members"
-            widget: "list"
+          - { label: 'Title', name: 'title', widget: 'string' }
+          - label: 'Team members'
+            name: 'members'
+            widget: 'list'
             fields:
-              - { label: "Name", name: "name", widget: "string" }
-              - { label: "Photo", name: "photo", widget: "image" }
-              - { label: "Position", name: "pos", widget: "string" }
+              - { label: 'Name', name: 'name', widget: 'string' }
+              - { label: 'Photo', name: 'photo', widget: 'image' }
+              - { label: 'Position', name: 'pos', widget: 'string' }
               - {
-                  label: "Company",
-                  name: "company",
-                  widget: "string",
+                  label: 'Company',
+                  name: 'company',
+                  widget: 'string',
                   required: false,
                 }
               - {
-                  label: "Bio",
-                  name: "bio",
-                  widget: "markdown",
+                  label: 'Bio',
+                  name: 'bio',
+                  widget: 'markdown',
                   required: false,
                 }
               - {
-                  label: "Facebook",
-                  name: "facebook",
-                  widget: "string",
+                  label: 'Facebook',
+                  name: 'facebook',
+                  widget: 'string',
                   required: false,
                 }
               - {
-                  label: "LinkedIn",
-                  name: "linkedin",
-                  widget: "string",
+                  label: 'LinkedIn',
+                  name: 'linkedin',
+                  widget: 'string',
                   required: false,
                 }
               - {
-                  label: "Twitter",
-                  name: "twitter",
-                  widget: "string",
+                  label: 'Twitter',
+                  name: 'twitter',
+                  widget: 'string',
                   required: false,
                 }
               - {
-                  label: "GitHub",
-                  name: "github",
-                  widget: "string",
+                  label: 'GitHub',
+                  name: 'github',
+                  widget: 'string',
                   required: false,
                 }
-      - file: "src/sections/advisors.md"
-        label: "Advisors"
-        name: "advisors"
+      - file: 'src/sections/advisors.md'
+        label: 'Advisors'
+        name: 'advisors'
         fields:
-          - { label: "Title", name: "title", widget: "string", required: false }
-          - label: "Advisors"
-            name: "members"
-            widget: "list"
+          - { label: 'Title', name: 'title', widget: 'string', required: false }
+          - label: 'Advisors'
+            name: 'members'
+            widget: 'list'
             fields:
-              - { label: "Name", name: "name", widget: "string" }
-              - { label: "Photo", name: "photo", widget: "image" }
-              - { label: "Position", name: "pos", widget: "string" }
+              - { label: 'Name', name: 'name', widget: 'string' }
+              - { label: 'Photo', name: 'photo', widget: 'image' }
+              - { label: 'Position', name: 'pos', widget: 'string' }
               - {
-                  label: "Company",
-                  name: "company",
-                  widget: "string",
+                  label: 'Company',
+                  name: 'company',
+                  widget: 'string',
                   required: false,
                 }
               - {
-                  label: "Bio",
-                  name: "bio",
-                  widget: "markdown",
+                  label: 'Bio',
+                  name: 'bio',
+                  widget: 'markdown',
                   required: false,
                 }
               - {
-                  label: "Facebook",
-                  name: "facebook",
-                  widget: "string",
+                  label: 'Facebook',
+                  name: 'facebook',
+                  widget: 'string',
                   required: false,
                 }
               - {
-                  label: "LinkedIn",
-                  name: "linkedin",
-                  widget: "string",
+                  label: 'LinkedIn',
+                  name: 'linkedin',
+                  widget: 'string',
                   required: false,
                 }
               - {
-                  label: "Twitter",
-                  name: "twitter",
-                  widget: "string",
+                  label: 'Twitter',
+                  name: 'twitter',
+                  widget: 'string',
                   required: false,
                 }
               - {
-                  label: "GitHub",
-                  name: "github",
-                  widget: "string",
+                  label: 'GitHub',
+                  name: 'github',
+                  widget: 'string',
                   required: false,
                 }
-      - file: "src/sections/pre-footer.md"
-        label: "Pre-footer"
-        name: "pre-footer"
+      - file: 'src/sections/pre-footer.md'
+        label: 'Pre-footer'
+        name: 'pre-footer'
         fields:
-          - { label: "Hide", name: "hide", widget: "boolean" }
-          - { label: "Title", name: "title", widget: "string" }
-          - label: "Pre-footer section content"
-            name: "content"
-            widget: "list"
+          - { label: 'Hide', name: 'hide', widget: 'boolean' }
+          - { label: 'Title', name: 'title', widget: 'string' }
+          - label: 'Pre-footer section content'
+            name: 'content'
+            widget: 'list'
             fields:
-              - label: "Videos"
-                name: "videos"
-                widget: "list"
+              - label: 'Videos'
+                name: 'videos'
+                widget: 'list'
                 fields:
-                  - { label: "Embed url", name: "embed", widget: "string" }
-                  - { label: "Label", name: "label", widget: "string" }
+                  - { label: 'Embed url', name: 'embed', widget: 'string' }
+                  - { label: 'Label', name: 'label', widget: 'string' }
               - {
-                  label: "Image",
-                  name: "image",
-                  widget: "image",
+                  label: 'Image',
+                  name: 'image',
+                  widget: 'image',
                   required: false,
                 }
-              - { label: "Text", name: "text", widget: "markdown" }
+              - { label: 'Text', name: 'text', widget: 'markdown' }
           - {
-              label: "Feature section content",
-              name: "featcontent",
-              widget: "hidden",
+              label: 'Feature section content',
+              name: 'featcontent',
+              widget: 'hidden',
               default: [],
             }
-      - file: "src/sections/token.md"
-        label: "Token"
-        name: "token"
+      - file: 'src/sections/token.md'
+        label: 'Token'
+        name: 'token'
         fields:
           - {
-              label: "Functionality Title",
-              name: "funcTitle",
-              widget: "string",
+              label: 'Functionality Title',
+              name: 'funcTitle',
+              widget: 'string',
               required: false,
             }
-          - { label: "Functionality details", name: "body", widget: "markdown" }
-          - { label: "Crowdsale Address", name: "crowdsale", widget: "string" }
-          - { label: "Details title", name: "detailsTitle", widget: "string" }
+          - { label: 'Functionality details', name: 'body', widget: 'markdown' }
+          - { label: 'Crowdsale Address', name: 'crowdsale', widget: 'string' }
+          - { label: 'Details title', name: 'detailsTitle', widget: 'string' }
           - {
-              label: "Allocation title",
-              name: "allocationTitle",
-              widget: "string",
+              label: 'Allocation title',
+              name: 'allocationTitle',
+              widget: 'string',
             }
-          - label: "Allocation"
-            name: "allocation"
-            widget: "list"
+          - label: 'Allocation'
+            name: 'allocation'
+            widget: 'list'
             fields:
-              - { label: "Label", name: "label", widget: "string" }
-              - { label: "Percent", name: "percent", widget: "number" }
+              - { label: 'Label', name: 'label', widget: 'string' }
+              - { label: 'Percent', name: 'percent', widget: 'number' }
           - {
-              label: "Information title",
-              name: "informationTitle",
-              widget: "string",
+              label: 'Information title',
+              name: 'informationTitle',
+              widget: 'string',
             }
-          - label: "Information"
-            name: "information"
-            widget: "list"
+          - label: 'Information'
+            name: 'information'
+            widget: 'list'
             fields:
-              - { label: "Label", name: "label", widget: "string" }
-              - { label: "Percent", name: "percent", widget: "number" }
+              - { label: 'Label', name: 'label', widget: 'string' }
+              - { label: 'Percent', name: 'percent', widget: 'number' }
           - {
-              label: "ICO Supply",
-              name: "icoSupply",
-              widget: "number",
+              label: 'ICO Supply',
+              name: 'icoSupply',
+              widget: 'number',
               required: false,
             }
-          - { label: "Supply", name: "supply", widget: "number" }
-          - { label: "Button Text", name: "btntext", widget: "string" }
-          - label: "Sale stages"
-            name: "stages"
-            widget: "list"
+          - { label: 'Supply', name: 'supply', widget: 'number' }
+          - { label: 'Button Text', name: 'btntext', widget: 'string' }
+          - label: 'Sale stages'
+            name: 'stages'
+            widget: 'list'
             fields:
-              - { label: "Label", name: "label", widget: "string" }
-              - { label: "Title", name: "title", widget: "string" }
-              - { label: "Subtitle", name: "subtitle", widget: "string" }
-              - { label: "Current stage", name: "current", widget: "boolean" }
-      - file: "src/sections/partners.md"
-        label: "Partners"
-        name: "partners"
+              - { label: 'Label', name: 'label', widget: 'string' }
+              - { label: 'Title', name: 'title', widget: 'string' }
+              - { label: 'Subtitle', name: 'subtitle', widget: 'string' }
+              - { label: 'Current stage', name: 'current', widget: 'boolean' }
+      - file: 'src/sections/partners.md'
+        label: 'Partners'
+        name: 'partners'
         fields:
-          - { label: "Title", name: "title", widget: "string", required: false }
-          - { label: "Hide", name: "hide", widget: "boolean" }
-          - { label: "Contact info", name: "body", widget: "markdown" }
-          - label: "Partners"
-            name: "partners"
-            widget: "list"
+          - { label: 'Title', name: 'title', widget: 'string', required: false }
+          - { label: 'Hide', name: 'hide', widget: 'boolean' }
+          - { label: 'Contact info', name: 'body', widget: 'markdown' }
+          - label: 'Partners'
+            name: 'partners'
+            widget: 'list'
             fields:
-              - { label: "Logo", name: "logo", widget: "image" }
+              - { label: 'Logo', name: 'logo', widget: 'image' }
               - {
-                  label: "Alt text",
-                  name: "alt",
-                  widget: "string",
-                  default: "Logo",
+                  label: 'Alt text',
+                  name: 'alt',
+                  widget: 'string',
+                  default: 'Logo',
                   required: false,
                 }
               - {
-                  label: "Link to site",
-                  name: "href",
-                  widget: "string",
+                  label: 'Link to site',
+                  name: 'href',
+                  widget: 'string',
                   required: false,
                 }
-      - file: "src/sections/footer.md"
-        label: "Footer content"
-        name: "footer"
+      - file: 'src/sections/footer.md'
+        label: 'Footer content'
+        name: 'footer'
         fields:
-          - label: "Links"
-            name: "links"
-            widget: "list"
+          - label: 'Links'
+            name: 'links'
+            widget: 'list'
             fields:
-              - { label: "Title", name: "title", widget: "string" }
-              - { label: "URL", name: "href", widget: "string" }
-              - { label: "Show", name: "show", widget: "boolean" }
-          - { label: "Copyright information", name: "body", widget: "markdown" }
+              - { label: 'Title', name: 'title', widget: 'string' }
+              - { label: 'URL', name: 'href', widget: 'string' }
+              - { label: 'Show', name: 'show', widget: 'boolean' }
+          - { label: 'Copyright information', name: 'body', widget: 'markdown' }
 
-  - name: "pages"
-    label: "Pages"
+  - name: 'pages'
+    label: 'Pages'
     files:
-      - file: "src/pages/privacy-policy.md"
-        label: "Privacy Policy"
-        name: "privacypolicy"
+      - file: 'src/pages/privacy-policy.md'
+        label: 'Privacy Policy'
+        name: 'privacypolicy'
         fields:
-          - { label: "templateKey", name: "templateKey", widget: "hidden" }
-          - { label: "Privacy Policy", name: "body", widget: "markdown" }
-      - file: "src/pages/terms-and-conditions.md"
-        label: "Terms And Conditions"
-        name: "termsandconditions"
+          - { label: 'templateKey', name: 'templateKey', widget: 'hidden' }
+          - { label: 'Privacy Policy', name: 'body', widget: 'markdown' }
+      - file: 'src/pages/terms-and-conditions.md'
+        label: 'Terms And Conditions'
+        name: 'termsandconditions'
         fields:
-          - { label: "templateKey", name: "templateKey", widget: "hidden" }
-          - { label: "Terms And Conditions", name: "body", widget: "markdown" }
-  - name: "settings"
-    label: "Settings"
+          - { label: 'templateKey', name: 'templateKey', widget: 'hidden' }
+          - { label: 'Terms And Conditions', name: 'body', widget: 'markdown' }
+  - name: 'settings'
+    label: 'Settings'
     files:
-      - file: "src/pages/index.md"
-        label: "Settings"
-        name: "index"
+      - file: 'src/pages/index.md'
+        label: 'Settings'
+        name: 'index'
         fields:
-          - { label: "templateKey", name: "templateKey", widget: "hidden" }
+          - { label: 'templateKey', name: 'templateKey', widget: 'hidden' }
           - {
-              label: "Said about link",
-              name: "said_about",
-              widget: "string",
+              label: 'Said about link',
+              name: 'said_about',
+              widget: 'string',
               required: false,
             }
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "Cookie Notice", name: "cookienotice", widget: "string" }
-          - { label: "Email", name: "email", widget: "string" }
+          - { label: 'Title', name: 'title', widget: 'string' }
+          - { label: 'Cookie Notice', name: 'cookienotice', widget: 'string' }
+          - { label: 'Email', name: 'email', widget: 'string' }
           - {
-              label: "Google Tag Manager ID",
-              name: "gtmId",
-              widget: "string",
+              label: 'Google Tag Manager ID',
+              name: 'gtmId',
+              widget: 'string',
               required: false,
             }
           - {
-              label: "Intercom ID",
-              name: "intercomId",
-              widget: "string",
+              label: 'Intercom ID',
+              name: 'intercomId',
+              widget: 'string',
               required: false,
             }
-          - label: "Socials"
-            name: "socials"
-            widget: "object"
+          - label: 'Socials'
+            name: 'socials'
+            widget: 'object'
             fields:
               - {
-                  label: "Twitter",
-                  name: "twitter",
-                  widget: "string",
+                  label: 'Twitter',
+                  name: 'twitter',
+                  widget: 'string',
                   required: false,
                 }
               - {
-                  label: "Facebook",
-                  name: "facebook",
-                  widget: "string",
+                  label: 'Facebook',
+                  name: 'facebook',
+                  widget: 'string',
                   required: false,
                 }
               - {
-                  label: "LinkedIn",
-                  name: "linkedin",
-                  widget: "string",
+                  label: 'LinkedIn',
+                  name: 'linkedin',
+                  widget: 'string',
                   required: false,
                 }
               - {
-                  label: "Telegram",
-                  name: "telegram",
-                  widget: "string",
+                  label: 'Telegram',
+                  name: 'telegram',
+                  widget: 'string',
                   required: false,
                 }
               - {
-                  label: "GitHub",
-                  name: "github",
-                  widget: "string",
+                  label: 'GitHub',
+                  name: 'github',
+                  widget: 'string',
                   required: false,
                 }
-          - label: "Meta"
-            name: "meta"
-            widget: "object"
+          - label: 'Meta'
+            name: 'meta'
+            widget: 'object'
             fields:
               - {
-                  label: "Description",
-                  name: "description",
-                  widget: "string",
+                  label: 'Description',
+                  name: 'description',
+                  widget: 'string',
                   required: false,
                 }
               - {
-                  label: "Keywords",
-                  name: "keywords",
-                  widget: "list",
-                  default: ["ico", "gatsby", "netlify"],
+                  label: 'Keywords',
+                  name: 'keywords',
+                  widget: 'list',
+                  default: ['ico', 'gatsby', 'netlify'],
                 }
-              - label: "Facebook"
-                name: "og"
-                widget: "object"
+              - label: 'Facebook'
+                name: 'og'
+                widget: 'object'
                 fields:
                   - {
-                      label: "Image",
-                      name: "image",
-                      widget: "image",
+                      label: 'Image',
+                      name: 'image',
+                      widget: 'image',
                       required: false,
                     }
                   - {
-                      label: "Locale",
-                      name: "locale",
-                      widget: "string",
+                      label: 'Locale',
+                      name: 'locale',
+                      widget: 'string',
                       required: false,
                     }
                   - {
-                      label: "Type",
-                      name: "type",
-                      widget: "string",
-                      default: "website",
+                      label: 'Type',
+                      name: 'type',
+                      widget: 'string',
+                      default: 'website',
                       required: false,
                     }
                   - {
-                      label: "Title",
-                      name: "title",
-                      widget: "string",
+                      label: 'Title',
+                      name: 'title',
+                      widget: 'string',
                       required: false,
                     }
                   - {
-                      label: "Description",
-                      name: "description",
-                      widget: "string",
+                      label: 'Description',
+                      name: 'description',
+                      widget: 'string',
                       required: false,
                     }
                   - {
-                      label: "URL",
-                      name: "url",
-                      widget: "string",
+                      label: 'URL',
+                      name: 'url',
+                      widget: 'string',
                       required: false,
                     }
                   - {
-                      label: "Site name",
-                      name: "site_name",
-                      widget: "string",
+                      label: 'Site name',
+                      name: 'site_name',
+                      widget: 'string',
                       required: false,
                     }
-              - label: "Twitter"
-                name: "twitter"
-                widget: "object"
+              - label: 'Twitter'
+                name: 'twitter'
+                widget: 'object'
                 fields:
                   - {
-                      label: "Card",
-                      name: "card",
-                      widget: "select",
-                      default: "summary",
+                      label: 'Card',
+                      name: 'card',
+                      widget: 'select',
+                      default: 'summary',
                       options:
-                        ["summary", "summary_large_image", "app", "player"],
+                        ['summary', 'summary_large_image', 'app', 'player'],
                     }
                   - {
-                      label: "Title",
-                      name: "title",
-                      widget: "string",
+                      label: 'Title',
+                      name: 'title',
+                      widget: 'string',
                       required: false,
                     }
                   - {
-                      label: "Description",
-                      name: "description",
-                      widget: "string",
+                      label: 'Description',
+                      name: 'description',
+                      widget: 'string',
                       required: false,
                     }
               - {
-                  label: "Canonical URL",
-                  name: "canonical",
-                  widget: "string",
+                  label: 'Canonical URL',
+                  name: 'canonical',
+                  widget: 'string',
                   required: false,
                 }
