@@ -1,8 +1,8 @@
 ---
-title: About us123
+title: About us
 subtitle: What We Offer
 content:
-  - image: ""
+  - image: ''
     text: >-
       Here, we present the Crypto Price Index (CPI) project – the very first
       token ecosystem of its kind, which provides multiple options for users to
