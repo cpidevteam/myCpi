@@ -1,5 +1,5 @@
 ---
-title: About us123
+title: About us
 subtitle: What We Offer
 content:
   - image: ""
