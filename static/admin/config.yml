@@ -148,18 +148,20 @@ collections:
               - { label: 'Article title', name: 'title', widget: 'string' }
               - { label: 'Article url', name: 'url', widget: 'string' }
               - { label: 'Date', name: 'date', widget: 'string' }
+
       - file: 'src/sections/Showcase.md'
         label: 'Showcase'
         name: 'showcase'
         fields:
-          - { label: 'Title', name: 'title', widget: 'string', required: false } 
+          - { label: 'Title', name: 'title', widget: 'string' } 
+          - { label: 'Text', name: 'text', widget: 'string' } 
             fields:
-              - label: 'Videos'
-                name: 'videos'
-                widget: 'list'
-                fields:
+               - label: 'Videos'
+                 name: 'videos'
+                 widget: 'list'
+                 fields:
                   - { label: 'Embed url', name: 'embed', widget: 'string' }
-                  - { label: 'Label', name: 'label', widget: 'string' }
+                  - { label: 'Label', name: 'label', widget: 'string' } 
 
       - file: 'src/sections/platform.md'
         label: 'Platform'

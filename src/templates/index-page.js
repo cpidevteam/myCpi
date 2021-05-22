@@ -8,7 +8,7 @@ import Head from '../components/Head';
 import Layout from '../layouts';
 import SaleInfo from '../sections/sale-info';
 import About from '../sections/about';
-import Showcase from '../sections/Showcase/Showcase';
+import Showcase from '../sections/Showcase';
 import Platform from '../sections/platform';
 import Functionality from '../sections/functionality';
 import Allocation from '../sections/allocation';
@@ -101,6 +101,7 @@ class IndexPage extends React.Component {
   }
 
   handleSectionRef(refName) {
+    console.log('ccccc : ', refName);
     return node => {
       if (node) {
         this.sections[refName] = findDOMNode(node); // eslint-disable-line
@@ -122,12 +123,12 @@ class IndexPage extends React.Component {
     const {
       data: {
         about: { frontmatter: about },
-        // showcase: { frontmatter: showcase },
+        showcase: { frontmatter: showcase },
         roadmap: { frontmatter: roadmap },
         team: { frontmatter: team },
         advisors: { frontmatter: advisors },
         media: { frontmatter: media },
-        showcase,
+        // showcase,
         settings,
         partners,
         platform,
@@ -166,6 +167,7 @@ class IndexPage extends React.Component {
             token: 'Token',
             roadmap: 'Roadmap',
             team: 'Team',
+            showcase: 'Showcase',
           }}
           ref={header => {
             this.header = header;
@@ -175,7 +177,7 @@ class IndexPage extends React.Component {
           <SaleInfo {...saleInfo} feedback={{ ...feedback }} />
         </div>
         <div ref={this.handleSectionRef('showcase')} id="showcase">
-          <Showcase {...showcase} />
+          <Showcase {...showcase} showcase={{ ...showcase }} />
         </div>
         <div ref={this.handleSectionRef('about')} id="about">
           <About {...about} />
@@ -286,33 +288,24 @@ export const pageQuery = graphql`
       }
     }
 
-    showcase: markdownRemark(fields: { slug: { eq: "/showcase/" } }) {
+    showcases: markdownRemark(fields: { slug: { eq: "/showcase/" } }) {
       frontmatter {
         title
         content {
-          videos {
-            embed
-            label
-          }
-          text
-        }
-      }
-    }
-    about: markdownRemark(fields: { slug: { eq: "/about/" } }) {
-      frontmatter {
-        title
-        subtitle
-        content {
-          image
-          text
           videos {
             embed
             label
           }
         }
-        featcontent {
-          image
-          text
+      }
+    }
+    showcase: markdownRemark(fields: { slug: { eq: "/Showcase/" } }) {
+      frontmatter {
+        title
+        text
+        videos {
+          embed
+          label
         }
       }
     }

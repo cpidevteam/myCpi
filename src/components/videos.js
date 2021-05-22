@@ -67,7 +67,7 @@ class Videos extends React.Component {
   render() {
     const { videos } = this.props;
     const { current } = this.state;
-
+    console.log('dfgklfjgld : ', this.props);
     if (videos.length === 0) {
       return false;
     }

@@ -1,6 +1,7 @@
 const _ = require('lodash');
 const path = require('path');
 const { createFilePath } = require('gatsby-source-filesystem');
+const { console } = require('window-or-global');
 
 const ignoredPaths = ['/faq/'];
 
@@ -80,7 +81,6 @@ exports.createPages = ({ boundActionCreators, graphql }) => {
 
 exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
   const { createNodeField } = boundActionCreators;
-
   if (ignoredPaths.includes(node.path)) {
     return;
   }
