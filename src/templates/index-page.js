@@ -288,17 +288,6 @@ export const pageQuery = graphql`
       }
     }
 
-    showcases: markdownRemark(fields: { slug: { eq: "/showcase/" } }) {
-      frontmatter {
-        title
-        content {
-          videos {
-            embed
-            label
-          }
-        }
-      }
-    }
     showcase: markdownRemark(fields: { slug: { eq: "/Showcase/" } }) {
       frontmatter {
         title

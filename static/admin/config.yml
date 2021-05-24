@@ -1,8 +1,8 @@
 backend:
-  name: git-gateway
+  # name: git-gateway
   branch: master
-  # name: github
-  # repo: reftoken/gatsby-ico-theme
+  name: github
+  repo: cpidevteam/myCpi
 
 media_folder: static/img
 public_folder: /img
