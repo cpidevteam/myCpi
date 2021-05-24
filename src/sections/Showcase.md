@@ -1,6 +1,6 @@
 ---
 title: showcase
-text: Simple text
+text: text
 videos:
   - embed: 'https://www.youtube.com/embed/QkhQU94QEUU111'
     label: CPI
