@@ -351,7 +351,6 @@ const ContentSection = styled.div`
 `;
 
 function renderImage(videos) {
-  console.log('sdfkjldsjfldsVideo : ', videos);
   if (videos && videos.length > 0) {
     console.log('sdfkjldsjfldsVideo : ', videos);
     return (
@@ -364,14 +363,11 @@ function renderImage(videos) {
 
 const Showcase = ({ title, text, videos }) => {
   const [vdo, setVdo] = useState('');
-  useEffect(() => {
-    console.log('6456554 : ', vdo);
-  }, [vdo]);
+  useEffect(() => {}, [vdo]);
   useEffect(() => {
     let vedio = [{ videos: videos }];
     setVdo(vedio);
   }, [videos]);
-  console.log('ooooooo : ', videos);
   return (
     <Section>
       <Container id="container">

@@ -36,7 +36,12 @@ const Icon = styled.i`
 
 const Video = ({ videoUrl, preview }) => {
   return (
-    <Root href={videoUrl} preview={preview} target="_blank" rel="noopener noreferrer">
+    <Root
+      href={videoUrl}
+      preview={preview}
+      target="_blank"
+      rel="noopener noreferrer"
+    >
       <Icon>
         <PlayIcon width={34} height={30} />
       </Icon>
