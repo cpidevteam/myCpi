@@ -1,6 +1,6 @@
 ---
-title: showcase123
-text: Simple textXYZ
+title: Showcase Data
+text: Title data
 videos:
   - embed: 'https://www.youtube.com/embed/QkhQU94QEUU111'
     label: CPI
