@@ -1,5 +1,5 @@
 ---
-title: showcase
+title: showcase uses
 text: Simple text
 videos:
   - videos:
