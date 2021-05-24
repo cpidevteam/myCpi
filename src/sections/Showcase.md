@@ -1,10 +1,9 @@
 ---
-title: Showcase
-text: Title data
+title: showcase
+text: Simple text
 videos:
-  - videos:
-      - embed: https://www.youtube.com/embed/QkhQU94QEUU
-        label: CPI
-      - embed: https://www.youtube.com/embed/F9aUjQdI5PU
-        label: CRYPTO ANIMATION
+  - embed: 'https://www.youtube.com/embed/QkhQU94QEUU111'
+    label: CPI
+  - embed: 'https://www.youtube.com/embed/7dbYyXom6DA'
+    label: CRYPTO
 ---
