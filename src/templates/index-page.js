@@ -3,7 +3,6 @@ import { findDOMNode } from 'react-dom';
 import PropTypes from 'prop-types';
 import scrollTo from 'scroll-to';
 import { graphql } from 'gatsby';
-
 import Head from '../components/Head';
 import Layout from '../layouts';
 import SaleInfo from '../sections/sale-info';
