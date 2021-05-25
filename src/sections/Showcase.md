@@ -10,4 +10,7 @@ adds:
 banners:
   - image: ""
     text: Banner text
+  - Banner Image:
+      - image: /img/01-crypto-price-index.svg
+        text: ABC
 ---
