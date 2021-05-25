@@ -2,14 +2,30 @@
 title: showcase DATA
 text: text
 videos:
-  - embed: ""
+  - embed: https://www.youtube.com/embed/QkhQU94QEUU
     label: CPI
+  - embed: https://www.youtube.com/embed/NpFhZzE6E-M
+    label: FLUTE
+  - embed: https://www.youtube.com/embed/BPTietcwyok
+    label: FLUTE2
+  - embed: https://www.youtube.com/embed/2nhtuDdSoYA
+    label: MOTIVATION
 adds:
-  - embed: ""
-    label: CPI_ADD
+  - embed: https://www.youtube.com/embed/2nhtuDdSoYA
+    label: MOTIVATION
+  - embed: https://www.youtube.com/embed/BPTietcwyok
+    label: FLUTE2
+  - embed: https://www.youtube.com/embed/NpFhZzE6E-M
+    label: FLUTE
+  - embed: https://www.youtube.com/embed/QkhQU94QEUU
+    label: CPI
 banners:
-  - image: /img/01-crypto-price-index.svg
-    text: ABC
-  - image: /img/04-restricted-access.png
-    text: SSSD
+  - image: /img/03-cpi-blockchain.svg
+    text: CPI
+  - image: /img/1-english.png
+    text: CPI-NETWORK
+  - image: /img/hotbit(1).png
+    text: HOTBIT
+  - image: /img/video-preview.jpg
+    text: MEGHRAJ
 ---
