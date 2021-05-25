@@ -298,11 +298,11 @@ export const pageQuery = graphql`
         }
         adds {
           embed
-          label
+          adds_title
         }
         banners {
           image
-          text
+          banner_text
         }
       }
     }

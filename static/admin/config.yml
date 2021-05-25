@@ -172,8 +172,8 @@ collections:
             name: 'adds'
             widget: 'list'
             fields:
-              - label: 'Videos'
-                name: 'videos'
+              - label: 'Adds'
+                name: 'adds'
                 widget: 'list'
                 fields:
                   - { label: 'Embed url', name: 'embed', widget: 'string' }
@@ -183,7 +183,7 @@ collections:
             widget: 'list'
             fields:
               - label: 'Image'
-                name: 'image'
+                name: 'Banner Image'
                 widget: 'list'
                 fields:
                   - { label: 'image', name: 'image', widget: 'string' }

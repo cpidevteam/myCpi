@@ -14,9 +14,4 @@ adds:
 banners:
   - image: ''
     text: Banner text
-  - image:
-      - image: ''
-        text: Crypto image
-      - image: ''
-        text: Shiba INU
 ---
