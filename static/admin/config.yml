@@ -167,6 +167,37 @@ collections:
                 fields:
                   - { label: 'Embed url', name: 'embed', widget: 'string' }
                   - { label: 'Label', name: 'label', widget: 'string' }
+          - label: 'Videos'
+            name: 'videos'
+            widget: 'list'
+            fields:
+              - label: 'Videos'
+                name: 'videos'
+                widget: 'list'
+                fields:
+                  - { label: 'Embed url', name: 'embed', widget: 'string' }
+                  - { label: 'Label', name: 'label', widget: 'string' }
+          - label: 'Adds'
+            name: 'adds'
+            widget: 'list'
+            fields:
+              - label: 'Videos'
+                name: 'videos'
+                widget: 'list'
+                fields:
+                  - { label: 'Embed url', name: 'embed', widget: 'string' }
+                  - { label: 'Label', name: 'label', widget: 'string' }
+          - label: 'Banners'
+            name: 'banners'
+            widget: 'list'
+            fields:
+              - label: 'Image'
+                name: 'image'
+                widget: 'list'
+                fields:
+                  - { label: 'image', name: 'image', widget: 'string' }
+                  - { label: 'text', name: 'text', widget: 'string' }
+
       - file: 'src/sections/platform.md'
         label: 'Platform'
         name: 'platform'

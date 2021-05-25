@@ -296,6 +296,14 @@ export const pageQuery = graphql`
           embed
           label
         }
+        adds {
+          embed
+          label
+        }
+        banners {
+          image
+          text
+        }
       }
     }
     about: markdownRemark(fields: { slug: { eq: "/about/" } }) {
