@@ -1,13 +1,16 @@
 ---
-title: showcase
+title: showcase DATA
 text: text
 videos:
-  - embed: ''
+  - embed: ""
     label: CPI
 adds:
-  - embed: ''
+  - embed: ""
     label: CPI_ADD
 banners:
-  - image: ''
+  - image: ""
     text: Banner text
+  - Banner Image:
+      - image: /img/01-crypto-price-index.svg
+        text: ABC
 ---
