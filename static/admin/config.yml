@@ -167,16 +167,6 @@ collections:
                 fields:
                   - { label: 'Embed url', name: 'embed', widget: 'string' }
                   - { label: 'Label', name: 'label', widget: 'string' }
-          - label: 'Videos'
-            name: 'videos'
-            widget: 'list'
-            fields:
-              - label: 'Videos'
-                name: 'videos'
-                widget: 'list'
-                fields:
-                  - { label: 'Embed url', name: 'embed', widget: 'string' }
-                  - { label: 'Label', name: 'label', widget: 'string' }
           - label: 'Adds'
             name: 'adds'
             widget: 'list'
