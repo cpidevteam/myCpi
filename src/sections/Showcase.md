@@ -12,11 +12,11 @@ adds:
   - embed: https://www.youtube.com/embed/7dbYyXom6DA
     label: CRYPTO
 banners:
-  - image: ""
+  - image: ''
     text: Banner text
   - image:
-      - image: https://cdn.dnaindia.com/sites/default/files/styles/full/public/2020/04/10/901440-cryptocurrency.jpg
+      - image: ''
         text: Crypto image
-      - image: https://miro.medium.com/max/1930/1*dgCm7hSvJG8hYlnTe7x7pg.jpeg
+      - image: ''
         text: Shiba INU
 ---
