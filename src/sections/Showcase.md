@@ -2,20 +2,23 @@
 title: showcase
 text: text
 videos:
-  - embed: ''
+  - embed: ""
     label: CPI
-  - embed: ''
+  - embed: ""
     label: CRYPTO
-  - embed: ''
+  - embed: ""
     label: CPI
-  - embed: ''
+  - embed: ""
     label: CRYPTO
 adds:
-  - embed: ''
+  - embed: ""
     label: CPI_ADD
 banners:
-  - image: ''
+  - image: ""
     text: Banner text
-  - image: ''
+  - image: ""
     text: Banner text
+  - Banner Image:
+      - image: /img/02-cpi-api.svg
+        text: API
 ---
