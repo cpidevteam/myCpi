@@ -151,6 +151,7 @@ collections:
               - { label: 'Article title', name: 'title', widget: 'string' }
               - { label: 'Article url', name: 'url', widget: 'string' }
               - { label: 'Date', name: 'date', widget: 'string' }
+
       - file: 'src/sections/Showcase.md'
         label: 'Showcase'
         name: 'showcase'
