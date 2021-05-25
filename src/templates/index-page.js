@@ -218,11 +218,11 @@ class IndexPage extends React.Component {
   }
 }
 
-IndexPage.propTypes = {
-  data: PropTypes.shape({
-    markdownRemark: PropTypes.object,
-  }),
-};
+// IndexPage.propTypes = {
+//   data: PropTypes.shape({
+//     markdownRemark: PropTypes.object,
+//   }),
+// };
 
 export default IndexPage;
 

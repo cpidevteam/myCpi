@@ -182,17 +182,13 @@ collections:
             name: 'banners'
             widget: 'list'
             fields:
-              - label: 'Image'
-                name: 'Banner Image'
-                widget: 'list'
-                fields:
-                  - {
-                      label: 'Image',
-                      name: 'image',
-                      widget: 'image',
-                      required: false,
-                    }
-                  - { label: 'Text', name: 'text', widget: 'string' }
+              - {
+                  label: 'Image',
+                  name: 'image',
+                  widget: 'image',
+                  required: false,
+                }
+              - { label: 'Text', name: 'text', widget: 'string' }
 
       - file: 'src/sections/platform.md'
         label: 'Platform'
