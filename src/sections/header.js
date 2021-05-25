@@ -29,9 +29,11 @@ const Root = styled.div`
 const LogoImage = styled.img`
   display: block;
   width: 250px;
-
-  @media screen and (max-width: 327px) {
+  @media screen and (max-width: 1400px) {
     width: 200px;
+  }
+  @media screen and (max-width: 1280px) {
+    width: 160px;
   }
 `;
 

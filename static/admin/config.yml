@@ -186,7 +186,7 @@ collections:
                 name: 'Banner Image'
                 widget: 'list'
                 fields:
-                  - { label: 'image', name: 'image', widget: 'string' }
+                  - { label: 'image', name: 'image', widget: 'image' }
                   - { label: 'text', name: 'text', widget: 'string' }
 
       - file: 'src/sections/platform.md'

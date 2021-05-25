@@ -91,20 +91,18 @@ const Tabs = styled.div`
 
 const Tab = styled.a`
   font-size: 16px;
-  font-weight: ${props => (props.current ? 'bold' : 'normal')};
-  flex: 1;
-
+  font-weight: ${props => (props.current ? 'normal' : 'normal')};
   text-align: center;
-  border-bottom: 3px solid
-    ${props => (props.current ? colors.primary : colors.gray)};
+  border-bottom: 2px solid
+    ${props => (props.current ? colors.darkGray : colors.transparent)};
 
   margin: 0 5px;
-  padding: 7px 0;
+  padding: 7px 12px;
   cursor: pointer;
-  color: ${colors.black} !important;
+  color: ${colors.lgtText} !important;
 
   &:hover {
-    border-bottom-color: ${colors.primary};
+    border-bottom-color: ${colors.darkGray};
   }
 `;
 
@@ -127,18 +125,19 @@ function renderImage(image, videos) {
             mozallowfullscreen="true"
             allowFullScreen
           />
+          <p>{data.label}</p>
         </div>
       ))
     );
   }
 
   if (image) {
-    console.log('dslfjdsklfjsld : ', image);
     return (
       Array.isArray(image) === true &&
       image.map((data, i) => (
-        <div key="i">
+        <div className="video" key="i">
           <Img src={withPrefix(image[i].image)} />
+          <p>{image[i].text}</p>
         </div>
       ))
     );
@@ -171,7 +170,7 @@ const Showcase = ({ title, text, videos, adds, banners }) => {
     setMyAdds(adver);
     setMyBanners(cBanner);
     let data = await [
-      { lable: 'Video', vedio: vedio },
+      { lable: 'Videos', vedio: vedio },
       { lable: 'Adds', adds: adver },
       { lable: 'Banners', banners: cBanner },
     ];
@@ -182,7 +181,7 @@ const Showcase = ({ title, text, videos, adds, banners }) => {
     <Section>
       <Container id="container">
         <SectionTitle>{title}</SectionTitle>
-        <div>
+        <div className="showcaseContainer">
           <Tabs>
             {myShowcase.length > 0 &&
               myShowcase.map((cCase, i) => (
@@ -195,36 +194,38 @@ const Showcase = ({ title, text, videos, adds, banners }) => {
                 </Tab>
               ))}
           </Tabs>
-          {current === 0 &&
-            vdo !== '' &&
-            vdo.length > 0 &&
-            vdo.map(({ image, videos }, i) => (
-              <ContentSection key={i}>
-                {renderImage(image, videos)}
-                {/* <Content markdown>{text}</Content> */}
-              </ContentSection>
-            ))}
+          <div className="videoSection">
+            {current === 0 &&
+              vdo !== '' &&
+              vdo.length > 0 &&
+              vdo.map(({ image, videos }, i) => (
+                <ContentSection key={i}>
+                  {renderImage(image, videos)}
+                  {/* <Content markdown>{text}</Content> */}
+                </ContentSection>
+              ))}
 
-          {current === 1 &&
-            myAdds !== '' &&
-            myAdds.length > 0 &&
-            myAdds.map(({ image, adds }, i) => (
-              <ContentSection key={i}>
-                {renderImage(image, adds)}
-                {/* <Content markdown>{text}</Content> */}
-              </ContentSection>
-            ))
-          // 'ddd'
-          }
-          {current === 2 &&
-            myBanners !== '' &&
-            myBanners.length > 0 &&
-            myBanners.map(({ banners, videoss }, i) => (
-              <ContentSection key={i}>
-                {renderImage(banners, videoss)}
-                {/* <Content markdown>{text}</Content> */}
-              </ContentSection>
-            ))}
+            {current === 1 &&
+              myAdds !== '' &&
+              myAdds.length > 0 &&
+              myAdds.map(({ image, adds }, i) => (
+                <ContentSection key={i}>
+                  {renderImage(image, adds)}
+                  {/* <Content markdown>{text}</Content> */}
+                </ContentSection>
+              ))
+            // 'ddd'
+            }
+            {current === 2 &&
+              myBanners !== '' &&
+              myBanners.length > 0 &&
+              myBanners.map(({ banners, videoss }, i) => (
+                <ContentSection key={i}>
+                  {renderImage(banners, videoss)}
+                  {/* <Content markdown>{text}</Content> */}
+                </ContentSection>
+              ))}
+          </div>
         </div>
       </Container>
     </Section>

@@ -18,4 +18,6 @@ export const colors = {
   lightPrimary: '#7b8aad',
   veryDarkPrimary: '#BEAF90',
   veryDarkGray: '#4a4a49',
+  transparent: 'transparent',
+  lgtText: '#6f6f6f',
 };

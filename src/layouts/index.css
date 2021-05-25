@@ -499,3 +499,50 @@ pre tt:after {
     font-size: 100%;
   }
 }
+.videoSection > div {
+  flex-direction: inherit;
+  flex-wrap: wrap;
+}
+.videoSection > div .video {
+  flex: 0 0 50%;
+  padding: 20px;
+}
+.videoSection > div .video iframe,
+.videoSection > div .video img {
+  height: 280px;
+  width: 100%;
+  margin-bottom: 0px;
+  padding: 10px;
+  background: #f3f2ee;
+}
+
+.videoSection > div .video p {
+  font-weight: 600;
+  color: #666;
+  padding: 10px 10px 0px;
+}
+.showcaseContainer > div {
+  justify-content: center;
+  border-bottom: solid 2px #f4f4f4;
+}
+.showcaseContainer > div a {
+  flex: inherit;
+}
+@media (max-width: 1366px) {
+  .videoSection > div .video {
+    padding: 15px;
+  }
+}
+@media (max-width: 650px) {
+  .videoSection > div .video {
+    flex: 1;
+    padding: 10px;
+  }
+  .videoSection > div {
+    flex-direction: column;
+  }
+  .videoSection > div .video iframe,
+  .videoSection > div .video img {
+    height: 220px;
+  }
+}

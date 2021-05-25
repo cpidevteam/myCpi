@@ -121,8 +121,8 @@ class IndexPage extends React.Component {
     console.log('ppppppp : ', this.props);
     const {
       data: {
-        about: { frontmatter: about },
         showcase: { frontmatter: showcase },
+        about: { frontmatter: about },
         roadmap: { frontmatter: roadmap },
         team: { frontmatter: team },
         advisors: { frontmatter: advisors },
@@ -162,11 +162,11 @@ class IndexPage extends React.Component {
           saidAbout={settings.frontmatter.said_about}
           menuUrls={{ home: '.', faq: 'faq' }}
           menu={{
+            showcase: 'Showcase',
             about: 'About us',
             token: 'Token',
             roadmap: 'Roadmap',
             team: 'Team',
-            showcase: 'Showcase',
           }}
           ref={header => {
             this.header = header;

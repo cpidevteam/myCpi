@@ -94,9 +94,9 @@ const Items = styled.div`
 `;
 
 const Item = styled.div`
-  font-size: 22px;
-  padding: 17px 0;
+  font-size: calc(13px +3 * ((100vw - 320px) / 680));
 
+  padding: 17px 0;
   @media screen and (min-width: ${breakpoints.desktop}px) {
     padding: 0;
     height: 36px;
@@ -242,9 +242,13 @@ const OrdinaryLink = styled.a`
 `;
 
 const LanguageWrapper = styled.div`
-  @media screen and (min-width: ${breakpoints.desktop}px) {
+  @media screen and (min-width: 1367px) {
     margin-left: 20px;
     margin-right: 20px;
+  }
+  @media screen and (max-width: 1366px) {
+    margin-left: 12px;
+    margin-right: 12px;
   }
 `;
 

@@ -14,7 +14,7 @@ const options = [
 const languageStyles = {
   container: styles => ({
     ...styles,
-    minWidth: '200px',
+    minWidth: '180px',
     lineHeight: '16px',
   }),
   option: (styles, { data }) => ({
