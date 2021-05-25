@@ -110,21 +110,38 @@ const Tab = styled.a`
 
 function renderImage(image, videos) {
   if (videos && videos.length > 0) {
-    console.log('sdfkjldsjfldsVideo : ', videos);
+    console.log('sdfkjldsjfldsVideoXXXX : ', videos);
     return (
-      <VideoWrapper>
-        <Videos videos={videos} />
-      </VideoWrapper>
+      // <VideoWrapper>
+      //   <Videos videos={videos} />
+      // </VideoWrapper>
+      Array.isArray(videos) === true &&
+      videos.map((data, index) => (
+        <div className="video" key={index}>
+          <iframe
+            src={data.embed}
+            title={data.label}
+            // allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            frameBorder="0"
+            webkitallowfullscreen="true"
+            mozallowfullscreen="true"
+            allowFullScreen
+          />
+        </div>
+      ))
     );
   }
 
   if (image) {
     console.log('dslfjdsklfjsld : ', image);
-    return image.map((data, i) => (
-      <div key="i">
-        <Img src={withPrefix(image[i].image)} />
-      </div>
-    ));
+    return (
+      Array.isArray(image) === true &&
+      image.map((data, i) => (
+        <div key="i">
+          <Img src={withPrefix(image[i].image)} />
+        </div>
+      ))
+    );
     // return <Img src={withPrefix(image[0].image)} />;
   }
 
