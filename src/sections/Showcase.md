@@ -4,9 +4,6 @@ text: text
 videos:
   - embed: ''
     label: CPI
-  - videos:
-      - embed: https://www.youtube.com/embed/5FXFnyRnl48
-        label: EMBED
 adds:
   - embed: ''
     label: CPI_ADD
